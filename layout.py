@@ -9,7 +9,6 @@ import yt_dlp
 import tkinter as tk
 import validators # verificar se a url é válida
 from tkinter import Checkbutton, BooleanVar
-from urllib.parse import urlparse
 from tkinter import ttk
 
 cor_1 = '#030303'  # Preto
