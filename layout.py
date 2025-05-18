@@ -10,6 +10,7 @@ import tkinter as tk
 import validators # verificar se a url é válida
 from tkinter import Checkbutton, BooleanVar
 from tkinter import ttk
+from urllib.parse import urlparse
 
 cor_1 = '#030303'  # Preto
 cor_3 = '#ffffff'  # Branco
@@ -127,6 +128,13 @@ def Download(url):
              })
 
      if apenas_audio.get():  # Se a opção "apenas áudio" estiver selecionada
+
+         ydl_opts['postprocessors'] = [{
+                'key': 'FFmpegExtractAudio',
+                'preferredcodec': 'mp3',
+                'preferredquality': '192',
+            }]
+
          if "youtube.com" in dominio or "youtu.be" in dominio:
           ydl_opts.update({
             'format': 'bestaudio',
@@ -134,12 +142,11 @@ def Download(url):
             'preferredquality': '192',
              })
 
-         else:
-          ydl_opts['postprocessors'] = [{
-                'key': 'FFmpegExtractAudio',
-                'preferredcodec': 'mp3',
-                'preferredquality': '192',
-            }]
+   
+        # ydl_opts['postprocessor_args'] = [
+           #     '-ss',"00:06:29"  # Define o tempo de início
+          #  ]
+
 
 
          ydl_opts['ffmpeg_location'] = r'C:\ProgramData\chocolatey\bin\ffmpeg.exe' # Substitua pelo caminho do seu ffmpeg (se não tiver é necessário baixar, ou então remover a parte 'ffmpeg_location' e 'preferredcodec': 'mp3'. Pórem, o arquivo voltará com o formato WEBM ao invés de MP3 )
@@ -180,3 +187,4 @@ janela.mainloop()
 # https://www.youtube.com/shorts/D3eTV1h2JXg?feature=share
 
 # https://www.twitch.tv/tck10/clip/EnticingRacyEndiveWutFace-tN_mAsj_AkhZmIHH
+
