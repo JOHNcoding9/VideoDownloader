@@ -1,7 +1,7 @@
 # 📽️ Video Downloader
-An easy to use and intuitive media downloader.
-Do you need to download any video on the internet?
-Just copy its URL and paste into the app, hit the download button and wait. The video will appear on your downloads or on a 'Youtube' folder.
+An easy-to-use and intuitive media downloader for videos and audio.  
+Just copy a URL from YouTube or other supported media platforms, paste it into the application, and click **Download**.  
+Files will be saved in your `downloads/` folder, and YouTube content will be organized into a `downloads/youtube/` subfolder.
 
  # 🎯 Features
 - ✅ Download full video in best available quality
