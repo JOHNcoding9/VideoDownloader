@@ -23,5 +23,5 @@ Files will be saved in your `downloads/` folder, and YouTube content will be org
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/video-downloader.git
-cd video-downloader
+git clone https://github.com/JOHNcoding9/videoDownloader.git
+cd videoDownloader
