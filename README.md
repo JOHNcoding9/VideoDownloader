@@ -17,6 +17,14 @@ Files will be saved in your `downloads/` folder, and YouTube content will be org
 - `validators` — URL validation
 - `urllib.parse` — domain parsing
 
+
+## 👤 Author
+
+João Vitor de Oliveira Lima
+
+📧 ghostcode541@gmail.com
+
+🔗 [LinkedIn](www.linkedin.com/in/joãovitordeoliveira-lima) --> www.linkedin.com/in/joãovitordeoliveira-lima
   
 ## 📦 Installation
 
@@ -25,3 +33,5 @@ Files will be saved in your `downloads/` folder, and YouTube content will be org
 ```bash
 git clone https://github.com/JOHNcoding9/videoDownloader.git
 cd videoDownloader
+
+
